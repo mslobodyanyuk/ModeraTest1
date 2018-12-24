@@ -1,0 +1,1 @@
+[{"id": 1, "name": "Top category", "parent_id": 0}, {"id": 2, "name": "Subcategory1", "parent_id": 1}, {"id": 3, "name": "Subcategory2", "parent_id": 1}, {"id": 4, "name": "Top category2", "parent_id": 0}, {"id": 5, "name": "Subcategory3", "parent_id": 4}, {"id": 6, "name": "Subcategory4", "parent_id": 4} , {"id": 7, "name": "Top category3", "parent_id": 0}]
