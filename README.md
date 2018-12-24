@@ -12,7 +12,7 @@ The format of the file with data about categories: json file in which an array o
 * name - the name of the category;
 * parent_id is the identifier of the parent category (or 0 for the upper category).
 
-###Example json file:
+### Example json file:
 
 ```php
 [{“Id”: 1, “name”: “Top category”, “parent_id”: 0}, {“id”: 2, “name”: “Subcategory”, “parent_id”: 1}]
