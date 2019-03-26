@@ -11,16 +11,18 @@ class TextParser implements TextParserInterface{
      * Method parse($text) converts text to array.
      */
 	public function parse($text){
-        $lines4Parse = json_decode($text,true);
+        $linesForParse = json_decode($text,true);
 
-        foreach($lines4Parse as $v){
-            $parsedLine = '';
-            $parsedLine["nodeId"] = $v["id"];
-            $parsedLine["parentId"] = $v["parent_id"];
-            $parsedLine["nodeName"] = $v["name"];
+        $parsedData = [];
 
-            $parsedData[] = $parsedLine;
+        foreach($linesForParse as $value){
+            $parsedData[] = [
+                'nodeId' => $value['id'],
+                'parentId' => $value['parent_id'],
+                'nodeName' => $value['name'],
+            ];
         }
+
         return $parsedData;
     }
 

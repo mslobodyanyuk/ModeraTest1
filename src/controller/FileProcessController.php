@@ -1,5 +1,5 @@
 <?php
-namespace src\controller;
+namespace src\Controller;
 
 use general as G;		
 use src\Factory as F;
